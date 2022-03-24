@@ -7,3 +7,8 @@ def number(lines):
    
 number(["a", "b", "c"])
 # ["1: a", "2: b", "3: c"]
+
+
+# One I liked
+def number(lines): 
+    return ["{}: {}".format(number+1,lines[number]) for number in range(len(lines))]
