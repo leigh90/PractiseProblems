@@ -7,6 +7,8 @@ def sum_digits(number):
 
 sum_digits(-32)
 
+# something I learnt
+
 a = 10
 b = 5
 print(eval('a * b'))
