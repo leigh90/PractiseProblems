@@ -16,4 +16,11 @@ def check_coupon(entered_code, correct_code, current_date, expiration_date):
 # check_coupon('123','123','September 5, 2014','October 1, 2014')
 # check_coupon('123a','123','September 5, 2014','October 1, 2014')
 check_coupon("123", "123", "July 9, 2015", "July 2, 2015")
-# check_coupon("123", "123", "July 9, 2015", "July 9, 2015")
+# check_coupon("123", "123", "July 9, 2015", "July 9, 2015")#
+
+
+# One I liked
+def check_coupon(entered_code, correct_code, current_date, expiration_date):
+    if entered_code is correct_code:
+        return(datetime.datetime.strptime(current_date,'%B %d, %Y') <= datetime.datetime.strptime(expiration_date,'%B %d, %Y'))
+    return False
